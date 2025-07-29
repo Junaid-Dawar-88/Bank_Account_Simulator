@@ -1,0 +1,17 @@
+{
+  "name": "Bank-Account-Simulator",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "junaid iqbal",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "inquirer": "^12.9.0"
+  }
+}

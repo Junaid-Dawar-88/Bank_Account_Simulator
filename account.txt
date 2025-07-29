@@ -1,0 +1,25 @@
+===== ACCOUNT DETAILS =====
+
+[1]
+ID: A001
+Name: junaid iqbal
+Account Number: 123456789
+PIN: 12345
+Balance: Rs. 1000
+-----------------------------
+
+[2]
+ID: A002
+Name: iqbal
+Account Number: 987654321
+PIN: 0
+Balance: Rs. 13000
+-----------------------------
+
+===== TRANSACTION HISTORY =====
+[1] Deposit: deposit Rs. 2000 on 7/29/2025, 6:20:54 AM
+-----------------------------
+[2] Withdraw: withdraw Rs. 3000 on 7/29/2025, 6:21:33 AM
+-----------------------------
+[3] Transfer: send 1000 to undefined on 7/29/2025, 6:22:06 AM
+-----------------------------
