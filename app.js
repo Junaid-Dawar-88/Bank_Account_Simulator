@@ -127,10 +127,10 @@ async function viewBalance() {
     console.log(`Account not found`);
     return main();
   }
-  const { selectedacc } = await inquirer.prompt([
+  const { selectedAcc } = await inquirer.prompt([
     {
       type: "list",
-      name: "selectedacc",
+      name: "selectedAcc",
       message: "Select an account:",
       choices: account.map((acc, index) => ({
         name: `${acc.id}`,
@@ -176,7 +176,7 @@ async function depositMony() {
       acc.bankBalace = (acc.bankBalace || 0) + Number(amount);
       let currentDate = new Date().toLocaleString();
       console.log(`Deposit successful!`);
-      console.log(`Withdraw date : ${currentDate}`);
+      console.log(`Deposit date : ${currentDate}`);
       console.log(`New Balance for ${acc.userName}: Rs. ${acc.bankBalace}`);
       found = true;
       transferDetail.push({
@@ -316,10 +316,10 @@ async function transferMony() {
   const now = new Date().toLocaleString();
   console.log(`\n  Rs. ${transferAmount} transferred successfully on ${now}`);
   console.log(
-    `Sender: ${senderAcc.userName}, New Balance: Rs. ${senderAcc.bankBalace}`
+    `Sender: ${senderAcc.userName}, Rs. ${transferAmount} send to ${receiverAcc.userName}`
   );
   console.log(
-    `Recipient: ${receiverAcc.userName}, New Balance: Rs. ${receiverAcc.bankBalace}`
+    `Recipient: ${receiverAcc.userName}, recive Rs. ${transferAmount}`
   );
   transferDetail.push({
     trensfer: `send ${senderAcc.bankBalace} to ${receiverAcc.number} on ${now}`,
